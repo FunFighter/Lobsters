@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Quicksand" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Lobster</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id='big_name' class="navbar-brand text-white" href="index.html">Lobsters</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse left-nav" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="BestLobsters.html">Best Lobsters</a>
+                        <a class="dropdown-item" href="BestLobstersVsCPI.html">Best Vs CPI</a>
+                        <a class="dropdown-item" href="ChangeInWeight.html">Change in Weight</a>
+                        <a class="dropdown-item" href="Lobsters Captured By Weight.html">Lobsters Captured By Weight</a>
+                        <a class="dropdown-item" href="NormCPIvLob.html">Normalized CPI Lobster</a>
+                        <a class="dropdown-item" href="pctchange daily.html">Percent Change Yearly</a>
+                        <a class="dropdown-item" href="price_per_pound_change_art.html">Change in Price Per Pound</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lobdata.html">Lobster Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cpidata.html">CPI Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- body start -->
+
+    <div class="container">
+        <div class='row'>
+
+
+            <div class="jumbotron col-lg-5 offset-lg-1 col-md-10 offset-md-1  col-sm-10 offset-sm-1 ">
+                <h1 class="display-5">Normalized in Weight</h1>
+                <hr class="my-4">
+                <img src="../images/price_per_pound_change_art.png" class="img-fluid" alt="Responsive image">
+                <p> This is a nice simple break down in the Price Per Pound of all the Lobsters sumed together. 
+                    Keep in mid this pricing is from the docks and not from the local stores.
+                </p>
+            </div>
+
+            <div style="height: 100%;" id='imageset'
+                class="jumbotron col-lg-4 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 ">
+                <h1 class="display-5">Visualizations</h1>
+                <hr class="my-4">
+                <!-- <p class='other-plots'>These are few other ones to take a look at.</p> -->
+                <div class='row'>
+                        <a href='BestLobsters.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/BestLobsters.png" class=" img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='BestLobstersVsCPI.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/BestLobstersVsCPI.png " class="img-fluid mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='ChangeInWeight.html' class='col-lg-5  col-md-5  col-sm-5 plot-hover'>
+                                <img src="../images/ChangeInWeight.png" class="img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='Lobsters Captured By Weight.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/Lobsters Captured By Weight.png" class="img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='NormCPIvLob.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/NormCPIvLob.png" class="img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='pctchange daily.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/pctchange daily.png" class="img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                            <a href='price_per_pound_change_art.html' class='col-lg-5  col-md-5   col-sm-5 plot-hover'>
+                                <img src="../images/price_per_pound_change_art.png" class="img-fluid  mx-auto img-fluid "
+                                    alt="Responsive image"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <span class="text-white"> Jokes aside this is all real data</span>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

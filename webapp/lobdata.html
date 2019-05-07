@@ -1,0 +1,2273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Quicksand" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Lobster</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id='big_name' class="navbar-brand text-white" href="index.html">Lobsters</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse left-nav" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="BestLobsters.html">Best Lobsters</a>
+                        <a class="dropdown-item" href="BestLobstersVsCPI.html">Best Vs CPI</a>
+                        <a class="dropdown-item" href="ChangeInWeight.html">Change in Weight</a>
+                        <a class="dropdown-item" href="Lobsters Captured By Weight.html">Lobsters Captured By Weight</a>
+                        <a class="dropdown-item" href="NormCPIvLob.html">Normalized CPI Lobster</a>
+                        <a class="dropdown-item" href="pctchange daily.html">Percent Change Yearly</a>
+                        <a class="dropdown-item" href="price_per_pound_change_art.html">Change in Price Per Pound</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lobdata.html">Lobster Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cpidata.html">CPI Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- body start -->
+
+    <div class="container">
+        <div class='row'>
+
+
+
+
+            <div style="height: 100%;" class="jumbotron col-lg-12 col-md-12 col-sm-12">
+                <h1 class="display-5">Uncooked Lobster Data</h1>
+                <hr class="my-4">
+
+                <p>These are the recorded lobster data going back go 1950, not all columns were used because this is raw format.</p>
+                <table class=" table table-striped table-hover ">
+
+                    <thead>
+                        <tr id='top-border-adj'>
+                            <th title="Field #1">Year</th>
+                            <th title="Field #2">Species</th>
+                            <th title="Field #3">Type</th>
+                            <th title="Field #4">Metric Tons</th>
+                            <th title="Field #5">Pounds</th>
+                            <th title="Field #6">USD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right">1950</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">10522.5</td>
+                            <td align="right">23197900</td>
+                            <td align="right">8346062</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1950</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">423.4</td>
+                            <td align="right">933500</td>
+                            <td align="right">296066</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1950</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">707.5</td>
+                            <td align="right">1559700</td>
+                            <td align="right">280740</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1951</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">11768.9</td>
+                            <td align="right">25945800</td>
+                            <td align="right">9378322</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1951</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">374</td>
+                            <td align="right">824600</td>
+                            <td align="right">301867</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1951</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1405</td>
+                            <td align="right">3097400</td>
+                            <td align="right">588506</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1952</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">11354.3</td>
+                            <td align="right">25031800</td>
+                            <td align="right">10556024</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1952</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">365.9</td>
+                            <td align="right">806700</td>
+                            <td align="right">337282</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1952</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">731.4</td>
+                            <td align="right">1612400</td>
+                            <td align="right">403100</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1953</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12752.9</td>
+                            <td align="right">28115100</td>
+                            <td align="right">10870406</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1953</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">340.2</td>
+                            <td align="right">750100</td>
+                            <td align="right">352856</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1953</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">905.1</td>
+                            <td align="right">1995400</td>
+                            <td align="right">399092</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1954</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12465.2</td>
+                            <td align="right">27480800</td>
+                            <td align="right">10485758</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1954</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">408.9</td>
+                            <td align="right">901400</td>
+                            <td align="right">409537</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1954</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">883.3</td>
+                            <td align="right">1947300</td>
+                            <td align="right">428406</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1955</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13132.8</td>
+                            <td align="right">28952500</td>
+                            <td align="right">11302897</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1955</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">389.7</td>
+                            <td align="right">859100</td>
+                            <td align="right">433719</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1955</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1041.2</td>
+                            <td align="right">2295400</td>
+                            <td align="right">527942</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1956</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12029.8</td>
+                            <td align="right">26520800</td>
+                            <td align="right">11906488</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1956</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">333.8</td>
+                            <td align="right">736000</td>
+                            <td align="right">384722</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1956</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1412</td>
+                            <td align="right">3113000</td>
+                            <td align="right">825056</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1957</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13678.1</td>
+                            <td align="right">30154700</td>
+                            <td align="right">11511322</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1957</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">293.7</td>
+                            <td align="right">647500</td>
+                            <td align="right">377406</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1957</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1832.4</td>
+                            <td align="right">4039800</td>
+                            <td align="right">1123545</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1958</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12350.1</td>
+                            <td align="right">27227100</td>
+                            <td align="right">13218791</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1958</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right"> </td>
+                            <td align="right">633200</td>
+                            <td align="right">389387</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1958</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1340.1</td>
+                            <td align="right">2954300</td>
+                            <td align="right">836546</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1959</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13192.9</td>
+                            <td align="right">29085000</td>
+                            <td align="right">14466924</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1959</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">229.6</td>
+                            <td align="right">506200</td>
+                            <td align="right">306442</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1959</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1442.3</td>
+                            <td align="right">3179600</td>
+                            <td align="right">954274</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1960</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14137.8</td>
+                            <td align="right">31168200</td>
+                            <td align="right">14250055</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1960</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">159.2</td>
+                            <td align="right">351000</td>
+                            <td align="right">235511</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1960</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1292.1</td>
+                            <td align="right">2848500</td>
+                            <td align="right">1100269</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1961</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12699.9</td>
+                            <td align="right">27998300</td>
+                            <td align="right">14571354</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1961</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">189.9</td>
+                            <td align="right">418700</td>
+                            <td align="right">283718</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1961</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1271.6</td>
+                            <td align="right">2803400</td>
+                            <td align="right">969287</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1962</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13379.3</td>
+                            <td align="right">29496100</td>
+                            <td align="right">14952415</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1962</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">234.5</td>
+                            <td align="right">517000</td>
+                            <td align="right">353915</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1962</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1423.9</td>
+                            <td align="right">3139200</td>
+                            <td align="right">1200651</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1963</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13732.8</td>
+                            <td align="right">30275400</td>
+                            <td align="right">16768949</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1963</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">265</td>
+                            <td align="right">584200</td>
+                            <td align="right">381375</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1963</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1626.2</td>
+                            <td align="right">3585200</td>
+                            <td align="right">1408003</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1964</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14042</td>
+                            <td align="right">30957013</td>
+                            <td align="right">19856718</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1964</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">202.6</td>
+                            <td align="right">446700</td>
+                            <td align="right">308878</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1964</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1647.1</td>
+                            <td align="right">3631100</td>
+                            <td align="right">1562163</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13718.9</td>
+                            <td align="right">30244585</td>
+                            <td align="right">21957454</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">217.9</td>
+                            <td align="right">480300</td>
+                            <td align="right">384629</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2607.8</td>
+                            <td align="right">5749100</td>
+                            <td align="right">3234641</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0</td>
+                            <td align="right">100</td>
+                            <td align="right">30</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1966</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13399.7</td>
+                            <td align="right">29541000</td>
+                            <td align="right">22266074</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1966</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">221.9</td>
+                            <td align="right">489100</td>
+                            <td align="right">409330</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1966</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2426.8</td>
+                            <td align="right">5350200</td>
+                            <td align="right">2468969</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1967</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12131.3</td>
+                            <td align="right">26744600</td>
+                            <td align="right">22388519</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1967</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">204.1</td>
+                            <td align="right">449900</td>
+                            <td align="right">387933</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1967</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2002</td>
+                            <td align="right">4413600</td>
+                            <td align="right">2733014</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1968</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14768.3</td>
+                            <td align="right">32558100</td>
+                            <td align="right">25451007</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1968</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">141.7</td>
+                            <td align="right">312500</td>
+                            <td align="right">293165</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1968</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3247.3</td>
+                            <td align="right">7159100</td>
+                            <td align="right">5069120</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1969</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">15325.5</td>
+                            <td align="right">33786600</td>
+                            <td align="right">28998384</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1969</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">140.4</td>
+                            <td align="right">309500</td>
+                            <td align="right">346733</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1969</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3839</td>
+                            <td align="right">8463400</td>
+                            <td align="right">5952090</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1970</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">15491.4</td>
+                            <td align="right">34152300</td>
+                            <td align="right">33462748</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1970</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">102.2</td>
+                            <td align="right">225400</td>
+                            <td align="right">268320</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1970</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">4588.2</td>
+                            <td align="right">10115200</td>
+                            <td align="right">6059299</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1971</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">15281</td>
+                            <td align="right">33688600</td>
+                            <td align="right">35594023</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1971</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">101.8</td>
+                            <td align="right">224500</td>
+                            <td align="right">308730</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1971</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3951.8</td>
+                            <td align="right">8712100</td>
+                            <td align="right">7513877</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14625.7</td>
+                            <td align="right">32243800</td>
+                            <td align="right">39510981</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">180.6</td>
+                            <td align="right">398200</td>
+                            <td align="right">622019</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">5357.8</td>
+                            <td align="right">11811900</td>
+                            <td align="right">12159195</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">7.2</td>
+                            <td align="right">15800</td>
+                            <td align="right">8666</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13151.3</td>
+                            <td align="right">28993400</td>
+                            <td align="right">41585884</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">105.8</td>
+                            <td align="right">233200</td>
+                            <td align="right">397208</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">5077.7</td>
+                            <td align="right">11194200</td>
+                            <td align="right">11683515</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">2.4</td>
+                            <td align="right">5400</td>
+                            <td align="right">3743</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">12947</td>
+                            <td align="right">28543000</td>
+                            <td align="right">43294695</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">86.6</td>
+                            <td align="right">191000</td>
+                            <td align="right">365076</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">4936.7</td>
+                            <td align="right">10883400</td>
+                            <td align="right">13393301</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.8</td>
+                            <td align="right">1800</td>
+                            <td align="right">1705</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">13698.4</td>
+                            <td align="right">30199500</td>
+                            <td align="right">51412975</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">91.4</td>
+                            <td align="right">201500</td>
+                            <td align="right">429298</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3360.5</td>
+                            <td align="right">7408500</td>
+                            <td align="right">9863076</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">2.5</td>
+                            <td align="right">5600</td>
+                            <td align="right">5755</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14280</td>
+                            <td align="right">31481600</td>
+                            <td align="right">51913288</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">132.7</td>
+                            <td align="right">292600</td>
+                            <td align="right">663103</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2424.7</td>
+                            <td align="right">5345600</td>
+                            <td align="right">8586312</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">4.9</td>
+                            <td align="right">10900</td>
+                            <td align="right">11328</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">14412.1</td>
+                            <td align="right">31772900</td>
+                            <td align="right">57868431</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">114.1</td>
+                            <td align="right">251600</td>
+                            <td align="right">606695</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2877.7</td>
+                            <td align="right">6344100</td>
+                            <td align="right">10425448</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">13.5</td>
+                            <td align="right">29700</td>
+                            <td align="right">56094</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">15579</td>
+                            <td align="right">34345568</td>
+                            <td align="right">64815788</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">254.3</td>
+                            <td align="right">560600</td>
+                            <td align="right">1487370</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2541</td>
+                            <td align="right">5601903</td>
+                            <td align="right">19725999</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">17.1</td>
+                            <td align="right">37774</td>
+                            <td align="right">93074</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">16874.1</td>
+                            <td align="right">37200600</td>
+                            <td align="right">72213885</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">190</td>
+                            <td align="right">418941</td>
+                            <td align="right">1353535</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3550.9</td>
+                            <td align="right">7828269</td>
+                            <td align="right">15192340</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.6</td>
+                            <td align="right">1240</td>
+                            <td align="right">1509</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">16880.4</td>
+                            <td align="right">37214500</td>
+                            <td align="right">76118331</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">188</td>
+                            <td align="right">414553</td>
+                            <td align="right">1345592</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3036.8</td>
+                            <td align="right">6694842</td>
+                            <td align="right">14082595</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">9.9</td>
+                            <td align="right">21849</td>
+                            <td align="right">38002</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">17750.4</td>
+                            <td align="right">39132500</td>
+                            <td align="right">85736088</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">217.4</td>
+                            <td align="right">479212</td>
+                            <td align="right">1637116</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3027.8</td>
+                            <td align="right">6675005</td>
+                            <td align="right">19216166</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">17.8</td>
+                            <td align="right">39351</td>
+                            <td align="right">70928</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">19542.9</td>
+                            <td align="right">43084300</td>
+                            <td align="right">99445337</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">238.1</td>
+                            <td align="right">524862</td>
+                            <td align="right">1891048</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3001.4</td>
+                            <td align="right">6616804</td>
+                            <td align="right">15998182</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">35.6</td>
+                            <td align="right">78473</td>
+                            <td align="right">113871</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">20320.1</td>
+                            <td align="right">44797660</td>
+                            <td align="right">108427186</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">238.2</td>
+                            <td align="right">525146</td>
+                            <td align="right">1994419</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2053</td>
+                            <td align="right">4526000</td>
+                            <td align="right">11373801</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">46.3</td>
+                            <td align="right">102011</td>
+                            <td align="right">164988</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">20659.3</td>
+                            <td align="right">45545524</td>
+                            <td align="right">122534431</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">201.8</td>
+                            <td align="right">444998</td>
+                            <td align="right">1769902</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3126.2</td>
+                            <td align="right">6891917</td>
+                            <td align="right">17378348</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">28.4</td>
+                            <td align="right">62655</td>
+                            <td align="right">145515</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">21297.5</td>
+                            <td align="right">46952481</td>
+                            <td align="right">116893703</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">203.1</td>
+                            <td align="right">447848</td>
+                            <td align="right">1946290</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3146.3</td>
+                            <td align="right">6936393</td>
+                            <td align="right">17384942</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">51</td>
+                            <td align="right">112390</td>
+                            <td align="right">197766</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">20740.7</td>
+                            <td align="right">45724900</td>
+                            <td align="right">119736851</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">221.7</td>
+                            <td align="right">488804</td>
+                            <td align="right">2227652</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2790.8</td>
+                            <td align="right">6152704</td>
+                            <td align="right">16934110</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">27.7</td>
+                            <td align="right">60962</td>
+                            <td align="right">143549</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">20798.4</td>
+                            <td align="right">45852261</td>
+                            <td align="right">141902985</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">204</td>
+                            <td align="right">449769</td>
+                            <td align="right">2145884</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2999</td>
+                            <td align="right">6611647</td>
+                            <td align="right">24448074</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">11.9</td>
+                            <td align="right">26214</td>
+                            <td align="right">78438</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">22209.7</td>
+                            <td align="right">48963602</td>
+                            <td align="right">146178363</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">270.8</td>
+                            <td align="right">596990</td>
+                            <td align="right">3194794</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3405.8</td>
+                            <td align="right">7508430</td>
+                            <td align="right">21801002</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">17.4</td>
+                            <td align="right">38252</td>
+                            <td align="right">103399</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">23843.3</td>
+                            <td align="right">52564851</td>
+                            <td align="right">147211621</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">332.5</td>
+                            <td align="right">732948</td>
+                            <td align="right">4029297</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">4059.3</td>
+                            <td align="right">8949159</td>
+                            <td align="right">28188301</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">19.1</td>
+                            <td align="right">42094</td>
+                            <td align="right">99585</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">28296.8</td>
+                            <td align="right">62383125</td>
+                            <td align="right">154757113</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">320.2</td>
+                            <td align="right">705894</td>
+                            <td align="right">3968186</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3075.8</td>
+                            <td align="right">6780964</td>
+                            <td align="right">24703984</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">7.7</td>
+                            <td align="right">17064</td>
+                            <td align="right">38165</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">29072.8</td>
+                            <td align="right">64093998</td>
+                            <td align="right">166014347</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">274.1</td>
+                            <td align="right">604181</td>
+                            <td align="right">3815034</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3273.1</td>
+                            <td align="right">7215809</td>
+                            <td align="right">28630678</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">17</td>
+                            <td align="right">37392</td>
+                            <td align="right">95277</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">25977.9</td>
+                            <td align="right">57270826</td>
+                            <td align="right">166371185</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">265.9</td>
+                            <td align="right">586207</td>
+                            <td align="right">3823949</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2181.5</td>
+                            <td align="right">4809421</td>
+                            <td align="right">18922781</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">24.1</td>
+                            <td align="right">53139</td>
+                            <td align="right">128902</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">26290</td>
+                            <td align="right">57958940</td>
+                            <td align="right">160260573</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">253.1</td>
+                            <td align="right">557973</td>
+                            <td align="right">3613248</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2442.7</td>
+                            <td align="right">5385085</td>
+                            <td align="right">18053227</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">23.4</td>
+                            <td align="right">51635</td>
+                            <td align="right">142040</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">31717.6</td>
+                            <td align="right">69924673</td>
+                            <td align="right">207143216</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">213.5</td>
+                            <td align="right">470702</td>
+                            <td align="right">3490463</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3274.2</td>
+                            <td align="right">7218204</td>
+                            <td align="right">31020680</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">30.3</td>
+                            <td align="right">66776</td>
+                            <td align="right">166255</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">31733.8</td>
+                            <td align="right">69960365</td>
+                            <td align="right">214391068</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">279.6</td>
+                            <td align="right">616478</td>
+                            <td align="right">4829558</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3206.4</td>
+                            <td align="right">7068938</td>
+                            <td align="right">31581042</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">12.5</td>
+                            <td align="right">27609</td>
+                            <td align="right">73618</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">32342.7</td>
+                            <td align="right">71302724</td>
+                            <td align="right">241416866</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">298.6</td>
+                            <td align="right">658374</td>
+                            <td align="right">5117534</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3665.3</td>
+                            <td align="right">8080547</td>
+                            <td align="right">31343408</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">14.3</td>
+                            <td align="right">31479</td>
+                            <td align="right">87843</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">37451.2</td>
+                            <td align="right">82564997</td>
+                            <td align="right">271539849</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">414.3</td>
+                            <td align="right">913409</td>
+                            <td align="right">6782252</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3315.6</td>
+                            <td align="right">7309477</td>
+                            <td align="right">30351731</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">21.4</td>
+                            <td align="right">47175</td>
+                            <td align="right">150044</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">36043.7</td>
+                            <td align="right">79462001</td>
+                            <td align="right">252893309</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">335</td>
+                            <td align="right">738501</td>
+                            <td align="right">4704994</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2702.6</td>
+                            <td align="right">5958097</td>
+                            <td align="right">22830994</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">10.4</td>
+                            <td align="right">22877</td>
+                            <td align="right">58734</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">40166.3</td>
+                            <td align="right">88550595</td>
+                            <td align="right">327147321</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">223.8</td>
+                            <td align="right">493311</td>
+                            <td align="right">3647995</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">3502.3</td>
+                            <td align="right">7721211</td>
+                            <td align="right">33811765</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">5</td>
+                            <td align="right">10958</td>
+                            <td align="right">31449</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">39374.1</td>
+                            <td align="right">86804071</td>
+                            <td align="right">313766431</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.7</td>
+                            <td align="right">10394</td>
+                            <td align="right">121196</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">320.5</td>
+                            <td align="right">706561</td>
+                            <td align="right">4710924</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2615.5</td>
+                            <td align="right">5766106</td>
+                            <td align="right">28157038</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">4.3</td>
+                            <td align="right">9469</td>
+                            <td align="right">33366</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">32292.8</td>
+                            <td align="right">71192803</td>
+                            <td align="right">249509514</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">3.6</td>
+                            <td align="right">7964</td>
+                            <td align="right">96094</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">316.1</td>
+                            <td align="right">696867</td>
+                            <td align="right">4475393</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1545.6</td>
+                            <td align="right">3407406</td>
+                            <td align="right">17002807</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">3.8</td>
+                            <td align="right">8302</td>
+                            <td align="right">34349</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">37688.1</td>
+                            <td align="right">83087146</td>
+                            <td align="right">293893651</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.3</td>
+                            <td align="right">9527</td>
+                            <td align="right">121060</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">318.5</td>
+                            <td align="right">702055</td>
+                            <td align="right">4784056</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2034.8</td>
+                            <td align="right">4485958</td>
+                            <td align="right">20837619</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">4</td>
+                            <td align="right">8726</td>
+                            <td align="right">34195</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">32515.2</td>
+                            <td align="right">71682906</td>
+                            <td align="right">283515593</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">2.5</td>
+                            <td align="right">5541</td>
+                            <td align="right">66551</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">333.7</td>
+                            <td align="right">735566</td>
+                            <td align="right">5278396</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1936.8</td>
+                            <td align="right">4269831</td>
+                            <td align="right">18871368</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">8.7</td>
+                            <td align="right">19138</td>
+                            <td align="right">81772</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">41380.7</td>
+                            <td align="right">91227878</td>
+                            <td align="right">381551620</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">2.2</td>
+                            <td align="right">4870</td>
+                            <td align="right">57893</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">390.2</td>
+                            <td align="right">860199</td>
+                            <td align="right">6160408</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2270.6</td>
+                            <td align="right">5005836</td>
+                            <td align="right">22805061</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">9.8</td>
+                            <td align="right">21581</td>
+                            <td align="right">105014</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">39854.3</td>
+                            <td align="right">87862730</td>
+                            <td align="right">417766675</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.6</td>
+                            <td align="right">10091</td>
+                            <td align="right">110927</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">345.2</td>
+                            <td align="right">761031</td>
+                            <td align="right">6038571</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1527.5</td>
+                            <td align="right">3367509</td>
+                            <td align="right">16680080</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">6.7</td>
+                            <td align="right">14769</td>
+                            <td align="right">69313</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">43599.3</td>
+                            <td align="right">96118933</td>
+                            <td align="right">404394801</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">2.8</td>
+                            <td align="right">6178</td>
+                            <td align="right">59527</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">402</td>
+                            <td align="right">886349</td>
+                            <td align="right">8110562</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2165.5</td>
+                            <td align="right">4773995</td>
+                            <td align="right">27329248</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">2.1</td>
+                            <td align="right">4632</td>
+                            <td align="right">17976</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">36759.3</td>
+                            <td align="right">81039466</td>
+                            <td align="right">368527642</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">3.6</td>
+                            <td align="right">7845</td>
+                            <td align="right">92908</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">300.6</td>
+                            <td align="right">662644</td>
+                            <td align="right">6915601</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1706.4</td>
+                            <td align="right">3761889</td>
+                            <td align="right">27012050</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">1.7</td>
+                            <td align="right">3787</td>
+                            <td align="right">21405</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">39802.7</td>
+                            <td align="right">87749019</td>
+                            <td align="right">325121865</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.5</td>
+                            <td align="right">9912</td>
+                            <td align="right">120317</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">336.2</td>
+                            <td align="right">741290</td>
+                            <td align="right">8007649</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1578.6</td>
+                            <td align="right">3480114</td>
+                            <td align="right">22452342</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">6</td>
+                            <td align="right">13218</td>
+                            <td align="right">44107</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">45711</td>
+                            <td align="right">100774523</td>
+                            <td align="right">311184204</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">5</td>
+                            <td align="right">11000</td>
+                            <td align="right">136072</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">320.3</td>
+                            <td align="right">706054</td>
+                            <td align="right">7934354</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1931.3</td>
+                            <td align="right">4257757</td>
+                            <td align="right">13291204</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.4</td>
+                            <td align="right">959</td>
+                            <td align="right">4295</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">53337.5</td>
+                            <td align="right">117587767</td>
+                            <td align="right">404098419</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.3</td>
+                            <td align="right">9419</td>
+                            <td align="right">116492</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">324.6</td>
+                            <td align="right">715686</td>
+                            <td align="right">11386190</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2615.6</td>
+                            <td align="right">5766340</td>
+                            <td align="right">35573459</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">1.1</td>
+                            <td align="right">2434</td>
+                            <td align="right">8021</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">57292.7</td>
+                            <td align="right">126307530</td>
+                            <td align="right">422843214</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.5</td>
+                            <td align="right">10013</td>
+                            <td align="right">104073</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">340.8</td>
+                            <td align="right">751353</td>
+                            <td align="right">12972498</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2638.3</td>
+                            <td align="right">5816402</td>
+                            <td align="right">38821731</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.9</td>
+                            <td align="right">1930</td>
+                            <td align="right">7651</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">68347.1</td>
+                            <td align="right">150678036</td>
+                            <td align="right">431494183</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">3.7</td>
+                            <td align="right">8256</td>
+                            <td align="right">97878</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">397.6</td>
+                            <td align="right">876478</td>
+                            <td align="right">13749382</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1785.7</td>
+                            <td align="right">3936753</td>
+                            <td align="right">22850811</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.6</td>
+                            <td align="right">1354</td>
+                            <td align="right">8227</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">68268.4</td>
+                            <td align="right">150504623</td>
+                            <td align="right">460717005</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4</td>
+                            <td align="right">8823</td>
+                            <td align="right">94673</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">346.7</td>
+                            <td align="right">764302</td>
+                            <td align="right">13842204</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2760.9</td>
+                            <td align="right">6086639</td>
+                            <td align="right">50185930</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.6</td>
+                            <td align="right">1344</td>
+                            <td align="right">5845</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">67136.1</td>
+                            <td align="right">148008240</td>
+                            <td align="right">567071687</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">4.6</td>
+                            <td align="right">10172</td>
+                            <td align="right">104091</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">431.6</td>
+                            <td align="right">951435</td>
+                            <td align="right">18238492</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2532.1</td>
+                            <td align="right">5582160</td>
+                            <td align="right">58571191</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.8</td>
+                            <td align="right">1838</td>
+                            <td align="right">4943</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">66683.6</td>
+                            <td align="right">147010762</td>
+                            <td align="right">622035173</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">348.3</td>
+                            <td align="right">767810</td>
+                            <td align="right">15806408</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2690.2</td>
+                            <td align="right">5930907</td>
+                            <td align="right">47787547</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0</td>
+                            <td align="right">9</td>
+                            <td align="right">11</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>LOBSTER</td>
+                            <td>SPANISH</td>
+                            <td align="right">0.4</td>
+                            <td align="right">895</td>
+                            <td align="right">3621</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">72279.2</td>
+                            <td align="right">159346664</td>
+                            <td align="right">670041557</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">1.4</td>
+                            <td align="right">3191</td>
+                            <td align="right">27430</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">308.4</td>
+                            <td align="right">679995</td>
+                            <td align="right">13730988</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">2453.7</td>
+                            <td align="right">5409323</td>
+                            <td align="right">44287111</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0.1</td>
+                            <td align="right">138</td>
+                            <td align="right">1070</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>LOBSTER</td>
+                            <td>SPANISH</td>
+                            <td align="right">0.3</td>
+                            <td align="right">710</td>
+                            <td align="right">3679</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>AMERICAN</td>
+                            <td align="right">60316</td>
+                            <td align="right">132972729</td>
+                            <td align="right">552055840</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>BANDED SPINY</td>
+                            <td align="right">1.4</td>
+                            <td align="right">3110</td>
+                            <td align="right">19984</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>CALIFORNIA SPINY</td>
+                            <td align="right">319</td>
+                            <td align="right">703200</td>
+                            <td align="right">13332805</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>CARIBBEAN SPINY</td>
+                            <td align="right">1743</td>
+                            <td align="right">3842670</td>
+                            <td align="right">33625682</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>SLIPPER</td>
+                            <td align="right">0</td>
+                            <td align="right">88</td>
+                            <td align="right">745</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>LOBSTER</td>
+                            <td>SPANISH</td>
+                            <td align="right">0.7</td>
+                            <td align="right">1509</td>
+                            <td align="right">2750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <footer class="footer">
+
+                <div class="container">
+
+                    <span class="text-white"> Jokes aside this is all real data</span>
+                </div>
+            </footer>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
